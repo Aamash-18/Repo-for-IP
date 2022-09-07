@@ -1,56 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table in HTML5</title>
 </head>
-<body>
-    <table border=1 bordercolor="red" width="40%" height="40%" collspacing=2 cellpadding=10 
-    bgcolor="lightgray" align="center">
-<!-- 
-    Attribute       Value               Description
-    border  -   any number      Specifies size of border
- -->
-        <!-- first row -->
-        <tr>
-            <th>Attribute</th>
-            <th>Value</th>
-            <th>Description</th>
-        </tr>
-        <!-- second row -->
-        <tr>
-            <td rowspan="3">align</td>
-            <td>left</td>
-            <td rowspan="3">Specifies the alignment of a table with respect to surrounding text.</td>
-        </tr>
-        <tr>
-            <td>center</td>
-        </tr>
-        <tr>
-            <td>right</td>
-        </tr>
-        <tr>
-            <td rowspan="3">bgcolor</td>
-            <td>rgb(x,x,x)</td>
-            <td rowspan="3">Specifies the color for table background.</td>
-        </tr>
-        <tr>
-            <td>#xxxxx</td>
-        </tr>
-        <tr>
-            <td>colorname</td>
-        </tr>
 
-        <tr>
-            <td rowspan="2">border</td>
-            <td>Any</td>
-            <td rowspan="2">Specifies size of border.</td>
-        </tr>
-        <tr>
-            <td>number</td>
-        </tr>
-    </table>
+<body>
+    <div class="container">
+
+        <div id="attributesOfTable">
+            <table border=1 bordercolor="red" width="40%" height="40%" collspacing=2 cellpadding=10 bgcolor="lightgray"
+                align="center">
+                <caption>Attributes of table tag</caption>
+                <!-- first row -->
+                <tr>
+                    <th>Attribute</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+                <!-- second row -->
+                <tr>
+                    <td rowspan="3">align</td>
+                    <td>left</td>
+                    <td rowspan="3">Specifies the alignment of a table with respect to surrounding text.</td>
+                </tr>
+                <tr>
+                    <td>center</td>
+                </tr>
+                <tr>
+                    <td>right</td>
+                </tr>
+                <!-- second row -->
+                <tr>
+                    <td rowspan="3">bgcolor</td>
+                    <td>rgb(x,x,x)</td>
+                    <td rowspan="3">Specifies the color for table background.</td>
+                </tr>
+                <tr>
+                    <td>#xxxxx</td>
+                </tr>
+                <tr>
+                    <td>colorname</td>
+                </tr>
+                <!-- third row -->
+                <tr>
+                    <td rowspan="2">border</td>
+                    <td>Any</td>
+                    <td rowspan="2">Specifies size of border.</td>
+                </tr>
+                <tr>
+                    <td>number</td>
+                </tr>
+                <!-- fourth row -->
+                <tr>
+                    <td>cellpadding</td>
+                    <td>pixels</td>
+                    <td>Specifies the space between the cell wall and the cell content</td>
+                </tr>
+                <!-- fifth row -->
+                <tr>
+                    <td>cellspacing</td>
+                    <td>pixels</td>
+                    <td>Specifies the space between cells</td>
+                </tr>
+                <!-- sixth row -->
+                <tr>
+                    <td rowspan="2">width</td>
+                    <td>pixels</td>
+                    <td rowspan="2">Specifies the width of a table</td>
+                </tr>
+                <tr>
+                    <td>x%</td>
+                </tr>
+                <!-- seventh row -->
+                <tr>
+                    <td rowspan="2">height</td>
+                    <td>pixels</td>
+                    <td rowspan="2">Specifies the height of a table</td>
+                </tr>
+                <tr>
+                    <td>x%</td>
+                </tr>
+                <!-- eight row -->
+                <tr>
+                    <td rowspan="3">bordercolor</td>
+                    <td>rgb(x,x,x)</td>
+                    <td rowspan="3">Specifies the color for table border.</td>
+                </tr>
+                <tr>
+                    <td>#xxxxx</td>
+                </tr>
+                <tr>
+                    <td>colorname</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="colAndRowSpanss" style="margin-top: 60px;">
+            <table border=1 bordercolor="red" width="40%" height="40%" collspacing=2 cellpadding=10 bgcolor="lightgray"
+                align="left">
+                <caption>Table for Colspan</caption>
+                <tr>
+                    <td colspan="2">this cell has colspan attribute with value 2</td>
+                </tr>
+                <tr>
+                    <td>C21</td>
+                    <td>C22</td>
+                </tr>
+            </table>
+
+            <table border=1 bordercolor="red" width="40%" height="40%" collspacing=2 cellpadding=10 bgcolor="lightgray"
+                align="right">
+                <caption>Table for Rowspan</caption>
+                <tr>
+                    <td rowspan="2">this cell has rowspan attribute with value 2</td>
+                    <td>C12</td>
+                </tr>
+                <tr>
+                    <td>C21</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
+
 </html>

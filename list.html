@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List in html5</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>List in Html5</h1>
+        <p>
+            In HTML5 there are three ways to give a list:
+        <ol>
+            <li>An unordered list</li>
+            <li>An ordered list</li>
+            <li>A definition list</li>
+        </ol>
+        </p>
+
+        <div id="unorderedList">
+            <h3>Unordered List:</h3>
+            <ul>
+                <li>In this type, plain bullets are used for the list items.</li>
+                <li>This option is used when there is no any standard sequence/order of list items.</li>
+                <li>To use this type of list we use <strong>ul tag.</strong></li>
+                <li>In ul tag we use <strong>li tag</strong> for individual list elements.</li>
+            </ul>
+        </div>
+
+        <div id="orderedList">
+            <h3>Ordered List:</h3>
+            <ul>
+                <li>In this type, generally numbers are used for the list items.</li>
+                <li>To use this type of list we use <strong>ol tag.</strong></li>
+                <li>In ol tag we use <strong>li tag</strong> for individual list elements.</li>
+                <li>
+                    <strong>type=""</strong> attribute is used to specify type of number for list items.
+                    <ul>
+                        <li>1-Number</li>
+                        <li>I-Upper Roman</li>
+                        <li>i-Lower Roman</li>
+                        <li>A-Upper Alpha</li>
+                        <li>a-Lower Alpha</li>
+                    </ul>
+                </li>
+                <li><strong>start="Number"</strong> attribute is used to specify the starting point of numbering.</li>
+            </ul>
+        </div>
+        <div id="definitionList">
+            <h3>Definition List:</h3>
+            <ul>
+                <li>We use this type when we need like dictionary or encyclopedia type list.</li>
+                <li>To use this type of list we use <strong>dl tag.</strong></li>
+                <li>In dl tag we use <strong>dt tag</strong> for specify a term.</li>
+                <li>In dt tag we use <strong>dd tag</strong> for specify a term definition.</li>
+            </ul>
+            <dl>
+                <dt><strong>MR SQUARE:</strong></dt>
+                <dd>This is the name of my youtube channel.</dd>
+
+                <dt><strong>MR-Square:</strong></dt>
+                <dd>This is my github username where you can see different repositories.</dd>
+
+                <dt>Third element</dt>
+                <dd>This is an example of difinition list.</dd>
+            </dl>
+        </div>
+    </div>
+</body>
+
+</html>

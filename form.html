@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms in html</title>
+    <style>
+        .form{
+            border: 2px solid;
+        }
+
+        .input{
+            margin-top: 10px;
+            border: 2px solid;
+        }
+        .Example{
+            border: 2px solid;
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -14,7 +28,185 @@
                 <dt>Syntax:</dt>
                 <dd>&lt;form action="" method="" target=""&gt;</dd>
             </dl>
-            
+            <table border=1 width="40%" heigth="40%" collspacing=2 cellpadding=10 bgcolor="lightgray">
+                <!-- headings -->
+                <tr>
+                    <th>Attribute</th>
+                    <th>Description</th>
+                </tr>
+
+                <!-- first row -->
+                <tr>
+                    <td>action</td>
+                    <td>url of next page to which we want to submit data.</td>
+                </tr>
+
+                <!-- second row -->
+                <tr>
+                    <td>method</td>
+                    <td>method which will upload data. The common methods used are GET & POST</td>
+                </tr>
+
+                <!-- third row -->
+                <tr>
+                    <td>target</td>
+                    <td>set the name of target window/frame where we want to display result.</td>
+                </tr>
+
+                <!--fourth row  -->
+                <tr>
+                    <td>enctype</td>
+                    <td>specify the way to encode data before sending it to server.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="input" id="input">
+            <h1>Input in HTML5</h1>
+            <dl>
+                <dt>Syntax:</dt>
+                <dd>&lt;input type="" name=""/&gt;</dd>
+            </dl>
+            <table border=1 width="50%" collspacing=2 cellpadding=10 bgcolor="lightgray">
+                <caption>input tag types:</caption>
+                <!-- heading -->
+                <tr>
+                    <th>type</th>
+                    <th>Description</th>
+                    <th>example</th>
+                </tr>
+
+                <!-- first row -->
+                <tr>
+                    <td>text</td>
+                    <td>used for single line text input</td>
+                    <td><input type="text" name="textExample" id="textExample"></td>
+                </tr>
+                <!-- second row -->
+                <tr>
+                    <td>password</td>
+                    <td>used for password input</td>
+                    <td><input type="password" name="passExample" id="passExample"></td>
+                </tr>
+                <!-- third row -->
+                <tr>
+                    <td>checkbox</td>
+                    <td>used to give list of items for multiple selection</td>
+                    <td><input type="checkbox" name="checkboxexample" id="checkboxexample"></td>
+                </tr>
+                <!-- fourth row -->
+                <tr>
+                    <td>radio</td>
+                    <td>used to give list of items for single selection</td>
+                    <td><input type="radio" name="radioExapmle" id="radioExapmle"></td>
+                </tr>
+                <!-- fifth row -->
+                <tr>
+                    <td>file</td>
+                    <td>used to give option for file upload</td>
+                    <td><input type="file" name="fileExapmle" id="fileExapmle"></td>
+                </tr>
+                <!-- sixth row -->
+                <tr>
+                    <td>submit</td>
+                    <td>used to submit a form</td>
+                    <td><input type="submit"></td>
+                </tr>
+                <!-- seventh row -->
+                <tr>
+                    <td>reset</td>
+                    <td>used to clear a form</td>
+                    <td><input type="reset"></td>
+                </tr>
+                <!-- eigth row -->
+                <tr>
+                    <td>button</td>
+                    <td>used to call a client-side script</td>
+                    <td><input type="button" value="button"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="Example" id="exampe1">
+            <form action="">
+                <table>
+                    <tr>
+                        <td>Enter username:</td>
+                        <td><input type="text" name="username" id="username"></td>
+                    </tr>
+                    <tr>
+                        <td>Enter password:</td>
+                        <td><input type="password" name="pass" id="pass"></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td><textarea name="address" id="address" cols="30" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Field of interest:</td>
+                        <td>
+                            <input type="checkbox" name="entertainment" id="entertainment">entertainment
+                            <input type="checkbox" name="sports" id="sports">sports
+                            <input type="checkbox" name="news" id="news">news
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" name="gender" id="male">Male
+                            <input type="radio" name="gender" id="female">Feale
+                            <!-- if you want to select one out of all then you have to give the same value to name attribute. -->
+                            <label for="other"><input type="radio" name="gender" id="other">Other</label>
+                            <!-- for this case if you will click on Other then also it will select.
+                                vlaue of for attribute should be same as value of id attribute of input tag which is inside of it
+                            -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Select language:</td>
+                        <td>
+                            <select name="lang" id="lang" multiple>
+                                <!-- you can add an attribute "multiple" in select tag if you want to selct multiple option. -->
+                                <option value="English">English</option>
+                                <option value="Urdu">Urdu</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Marathi">Marathi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Country:</td>
+                        <td>
+                            <select name="country" id="country">
+                                <option value="india">India</option>
+                                <option value="usa">USA</option>
+                                <option value="china">China</option>
+                                <option value="dubai">Dubai</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Upload photo</td>
+                        <td><input type="file" name="photo" id="photo"></td>
+                    </tr>
+                    <tr><td><input type="submit" value="submit"></td></tr>
+                    <tr><td><input type="reset" value="reset"></td></tr>
+                    <tr><td><input type="button" value="validate"></td></tr>
+                </table>
+            </form>
+        </div>
+        <div class="Example" id="exampe2">
+            <h2>Exampe of fieldest and  legend tags: </h2>
+            <form action="">
+                <fieldset>
+                    <legend>Employee basic ingormation:</legend>
+                    <label for="fname">First name:<input type="text" name="fname" id="fname"></label>
+                    <br> <br>
+                    <label for="lname">Last name:<input type="text" name="lname" id="lname"></label>
+                    <br><br>
+                    <label for="email">Email:<input type="email" name="email" id="email"></label>
+                    <br><br>
+                    <input type="submit" value="submit">
+                </fieldset>
+            </form>
         </div>
     </div>
 </body>
